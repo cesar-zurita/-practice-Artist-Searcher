@@ -6,8 +6,9 @@ interface ArtistSearchResponse {
   artists: Artist[]
 }
 
+console.log('hOLA!!!0');
 
-async function fetchTry(): Promise< {artists: Artist[]} >{
+export async function fetchTry(): Promise< {artists: Artist[]} >{
 
     try{
         const response = await fetch('https://musicbrainz.org/ws/2/artist/?query=coldplay&fmt=json');
@@ -24,3 +25,4 @@ async function fetchTry(): Promise< {artists: Artist[]} >{
 }
 
 fetchTry();
+
